@@ -21,9 +21,9 @@ module GameOfLife
       end
 
       def self.for(locations, seed=RANDOM_SEED)
-        seeded = [Cell.survive!, Cell.die!]
+        seeded = [Cells::Cell.survive!, Cells::Cell.die!]
         population = locations.each_with_object({}) do |location, population|
-          population[location] = seeded[rand(seed).to_i] || Cell.die!
+          population[location] = seeded[rand(seed).to_i] || Cells::Cell.die!
         end
         new(population: population)
       end
