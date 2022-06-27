@@ -19,3 +19,9 @@ The engine implements the core domain while following a discovery approach to te
 - `Worlds::Location` - coordinate in which a `Cell` exist.
 - `Worlds::Population` - the combination between a `Location` and a `Cell.`
 - `Worlds::Cells::Neighbor` - the representation of neighbors in every direction.
+
+### Development
+
+#### Run specs
+
+`$ rspec `
